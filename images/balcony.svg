@@ -1,0 +1,65 @@
+<svg id="balcony" xmlns="http://www.w3.org/2000/svg" width="46.552" height="46.552" viewBox="0 0 46.552 46.552">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff4b00;
+      }
+
+      .cls-2 {
+        fill: #d03b00;
+      }
+
+      .cls-3 {
+        fill: #ffe470;
+      }
+
+      .cls-4 {
+        fill: #fdbf00;
+      }
+
+      .cls-5 {
+        fill: #5a5a5a;
+      }
+
+      .cls-6 {
+        fill: #6e6e6e;
+      }
+
+      .cls-7 {
+        fill: #ff7816;
+      }
+
+      .cls-8 {
+        fill: #ececf1;
+      }
+
+      .cls-9 {
+        fill: #d3d3d8;
+      }
+    </style>
+  </defs>
+  <path id="Path_74" data-name="Path 74" class="cls-1" d="M106,286h5.455v16.457H106Zm0,0" transform="translate(-96.362 -259.996)"/>
+  <path id="Path_75" data-name="Path 75" class="cls-2" d="M346,286h5.455v16.457H346Zm0,0" transform="translate(-314.541 -259.996)"/>
+  <path id="Path_76" data-name="Path 76" class="cls-3" d="M166,286h16.366v16.457H166Zm0,0" transform="translate(-150.907 -259.996)"/>
+  <path id="Path_77" data-name="Path 77" class="cls-4" d="M256,286h8.183v16.457H256Zm0,0" transform="translate(-232.724 -259.996)"/>
+  <path id="Path_78" data-name="Path 78" class="cls-3" d="M145.549,62.728V81.912H121V62.728L133.274,60Zm0,0" transform="translate(-109.998 -54.545)"/>
+  <path id="Path_79" data-name="Path 79" class="cls-4" d="M268.274,62.728V81.912H256V60Zm0,0" transform="translate(-232.724 -54.545)"/>
+  <path id="Path_80" data-name="Path 80" class="cls-1" d="M91,169.037v5.6l2.046,2.728,3.41-2.728V165Zm0,0" transform="translate(-82.726 -149.998)"/>
+  <path id="Path_81" data-name="Path 81" class="cls-2" d="M361,165v9.638l2.728,2.728,2.728-2.728v-5.6Zm0,0" transform="translate(-328.177 -149.998)"/>
+  <g id="Group_13" data-name="Group 13" transform="translate(24.64 26.004)">
+    <path id="Path_82" data-name="Path 82" class="cls-5" d="M453.728,286v15.093l-1.364,2.728L451,301.093V286Zm0,0" transform="translate(-434.634 -286)"/>
+    <path id="Path_83" data-name="Path 83" class="cls-5" d="M393.728,286v15.093l-1.364,2.728L391,301.093V286Zm0,0" transform="translate(-380.089 -286)"/>
+    <path id="Path_84" data-name="Path 84" class="cls-5" d="M333.728,286v15.093l-1.364,2.728L331,301.093V286Zm0,0" transform="translate(-325.545 -286)"/>
+    <path id="Path_85" data-name="Path 85" class="cls-5" d="M273.728,286v15.093l-1.364,2.728L271,301.093V286Zm0,0" transform="translate(-271 -286)"/>
+  </g>
+  <path id="Path_86" data-name="Path 86" class="cls-6" d="M213.728,286v15.093l-1.364,2.728L211,301.093V286Zm0,0" transform="translate(-191.816 -259.996)"/>
+  <path id="Path_87" data-name="Path 87" class="cls-6" d="M153.728,286v15.093l-1.364,2.728L151,301.093V286Zm0,0" transform="translate(-137.271 -259.996)"/>
+  <path id="Path_88" data-name="Path 88" class="cls-6" d="M93.728,286v15.093l-1.364,2.728L91,301.093V286Zm0,0" transform="translate(-82.726 -259.996)"/>
+  <path id="Path_89" data-name="Path 89" class="cls-6" d="M33.728,286v15.093l-1.364,2.728L31,301.093V286Zm0,0" transform="translate(-28.181 -259.996)"/>
+  <path id="Path_90" data-name="Path 90" class="cls-7" d="M121,15v4.037a17.171,17.171,0,0,1-5.455-1.309,16.5,16.5,0,0,1-4.064-2.373A17.754,17.754,0,0,1,106,8.21a17.762,17.762,0,0,1-6.955,8.183,16.658,16.658,0,0,1-2.591,1.336A16.632,16.632,0,0,1,91,19.039V15A15,15,0,0,1,104.638.082a11.426,11.426,0,0,1,2.728,0A15,15,0,0,1,121,15Zm0,0" transform="translate(-82.726)"/>
+  <path id="Path_91" data-name="Path 91" class="cls-1" d="M256,8.21V0a11.149,11.149,0,0,1,1.364.082A15,15,0,0,1,271,15v4.037a17.171,17.171,0,0,1-5.455-1.309,16.5,16.5,0,0,1-4.064-2.373A17.754,17.754,0,0,1,256,8.21Zm0,0" transform="translate(-232.724 0)"/>
+  <path id="Path_92" data-name="Path 92" class="cls-6" d="M0,271H46.552v2.728H0Zm0,0" transform="translate(0 -246.36)"/>
+  <path id="Path_93" data-name="Path 93" class="cls-5" d="M256,271h23.276v2.728H256Zm0,0" transform="translate(-232.724 -246.36)"/>
+  <path id="Path_94" data-name="Path 94" class="cls-8" d="M0,452H46.552v5.455H0Zm0,0" transform="translate(0 -410.903)"/>
+  <path id="Path_95" data-name="Path 95" class="cls-9" d="M256,452h23.276v5.455H256Zm0,0" transform="translate(-232.724 -410.903)"/>
+</svg>

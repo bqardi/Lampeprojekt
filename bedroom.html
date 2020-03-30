@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="En lille app til at kontrollere lamper i huset">
+    <title>Lampe app</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+
+    <!-- background circles blue shades -->
+
+    <svg class="round-background" style="top:-110px;left:-50px" width="194" height="194" viewBox="0 0 194 194">
+        <circle data-name="Ellipse 1" cx="97" cy="97" r="97" /></svg>
+    <svg class="round-background" style="top:110px;left:5vw" width="194" height="194" viewBox="0 0 194 194">
+        <circle data-name="Ellipse 1" cx="97" cy="97" r="97" /></svg>
+    <svg class="round-background" style="top:50px;right:-90px" width="194" height="194" viewBox="0 0 194 194">
+        <circle data-name="Ellipse 1" cx="97" cy="97" r="97" /></svg>
+
+
+
+
+    <div class="wrapper-pages">
+
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- ************** HEADER *********************** -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+
+
+
+        <header class="header-pages">
+            <div class="header-title">
+                <h1>
+                    <a href="index.html"> <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                            </svg>
+                            Bed
+                        </span><br>
+
+                        <span>Room</span>
+                    </a>
+                </h1>
+                <p class="yellow">
+                    4 Lights
+                </p>
+            </div>
+
+            <div class="header-lamp ">
+                <svg id="header-lamp" class="yellow header-lamp-animation" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="139" height="159" viewBox="0 0 139 159">
+
+                    <defs>
+                        <style>
+                            .lamp-shade {
+                                fill: #fff;
+                            }
+
+                            .lamp-shadow {
+                                fill: #568bd0;
+                                opacity: 0.151;
+                            }
+
+                            .bulb {
+                                filter: url(#Ellipse_10);
+                            }
+                        </style>
+                        <filter id="Ellipse_10" x="35" y="89" width="70" height="70" filterUnits="userSpaceOnUse">
+                            <feOffset dy="3" />
+                            <feGaussianBlur stdDeviation="8" result="blur" />
+                            <feFlood id="bulb-flood-color" flood-color="#ffc72f" />
+                            <feComposite operator="in" in2="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" />
+                        </filter>
+                    </defs>
+                    <g id="light_bulb" data-name="light bulb" transform="translate(-204 4)">
+                        <g class="bulb" transform="matrix(1, 0, 0, 1, 204, -4)">
+                            <circle id="bulb" style="opacity:0.2;" data-name="Ellipse 10" class="light-bulb" cx="11"
+                                cy="11" r="11" transform="translate(59 110)" />
+                        </g>
+                        <path id="Path_100" data-name="Path 100" class="lamp-shade"
+                            d="M30.334,1.617h79.054c3.314,0,4.206,2.324,6,6L139,62a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6L24.334,7.617C25.837,4.237,27.02,1.617,30.334,1.617Z"
+                            transform="translate(204 52)" />
+                        <rect id="Rectangle_13" data-name="Rectangle 13" class="lamp-shade" width="5" height="102"
+                            transform="translate(271 -4)" />
+                        <rect id="Rectangle_14" data-name="Rectangle 14" class="lamp-shadow" width="4" height="58"
+                            rx="2" transform="matrix(0.921, -0.391, 0.391, 0.921, 303.828, 59.087)" />
+                    </g>
+                </svg>
+            </div>
+
+        </header>
+
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- ************** HEADER BUTTONS *************** -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+
+
+        <div class="header-buttons">
+            <div class="header-buttons-animation">
+                <a class="button align-flex-row text-dark background-light" href="#">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.425" height="20.425"
+                        viewBox="0 0 20.425 20.425">
+                        <path data-name="Path 101"
+                            d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                            transform="translate(-92.553 0)" />
+                        <path data-name="Path 102"
+                            d="M2.479,145.2a.6.6,0,0,0-.6-.6H.6a.6.6,0,1,0,0,1.2H1.88A.6.6,0,0,0,2.479,145.2Zm0,0"
+                            transform="translate(0 -138.833)" />
+                        <path data-name="Path 103"
+                            d="M451.747,144.6h-1.282a.6.6,0,1,0,0,1.2h1.282a.6.6,0,1,0,0-1.2Zm0,0"
+                            transform="translate(-431.921 -138.833)" />
+                        <path data-name="Path 104"
+                            d="M33.695,249.112l-1.11.641a.6.6,0,1,0,.6,1.036l1.11-.641a.6.6,0,1,0-.6-1.037Zm0,0"
+                            transform="translate(-30.997 -239.097)" />
+                        <path data-name="Path 105"
+                            d="M422.48,25.937a.6.6,0,0,0,.3-.08l1.11-.641a.6.6,0,1,0-.6-1.036l-1.11.641a.6.6,0,0,0,.3,1.117Zm0,0"
+                            transform="translate(-405.051 -23.138)" />
+                        <path data-name="Path 106"
+                            d="M423.888,249.757l-1.11-.641a.6.6,0,1,0-.6,1.036l1.11.641a.6.6,0,1,0,.6-1.036Zm0,0"
+                            transform="translate(-405.05 -239.101)" />
+                        <path data-name="Path 107"
+                            d="M34.3,24.821l-1.11-.641a.6.6,0,0,0-.6,1.036l1.11.641a.6.6,0,0,0,.6-1.037Zm0,0"
+                            transform="translate(-31 -23.139)" />
+                    </svg>
+                    Main Lights
+                </a>
+                <a class="button align-flex-row text-dark background-light active" href="#">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.425" height="20.425"
+                        viewBox="0 0 20.425 20.425">
+                        <path data-name="Path 101"
+                            d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                            transform="translate(-92.553 0)" />
+                        <path data-name="Path 102"
+                            d="M2.479,145.2a.6.6,0,0,0-.6-.6H.6a.6.6,0,1,0,0,1.2H1.88A.6.6,0,0,0,2.479,145.2Zm0,0"
+                            transform="translate(0 -138.833)" />
+                        <path data-name="Path 103"
+                            d="M451.747,144.6h-1.282a.6.6,0,1,0,0,1.2h1.282a.6.6,0,1,0,0-1.2Zm0,0"
+                            transform="translate(-431.921 -138.833)" />
+                        <path data-name="Path 104"
+                            d="M33.695,249.112l-1.11.641a.6.6,0,1,0,.6,1.036l1.11-.641a.6.6,0,1,0-.6-1.037Zm0,0"
+                            transform="translate(-30.997 -239.097)" />
+                        <path data-name="Path 105"
+                            d="M422.48,25.937a.6.6,0,0,0,.3-.08l1.11-.641a.6.6,0,1,0-.6-1.036l-1.11.641a.6.6,0,0,0,.3,1.117Zm0,0"
+                            transform="translate(-405.051 -23.138)" />
+                        <path data-name="Path 106"
+                            d="M423.888,249.757l-1.11-.641a.6.6,0,1,0-.6,1.036l1.11.641a.6.6,0,1,0,.6-1.036Zm0,0"
+                            transform="translate(-405.05 -239.101)" />
+                        <path data-name="Path 107"
+                            d="M34.3,24.821l-1.11-.641a.6.6,0,0,0-.6,1.036l1.11.641a.6.6,0,0,0,.6-1.037Zm0,0"
+                            transform="translate(-31 -23.139)" />
+                    </svg>
+                    Desk Lights
+                </a>
+                <a class="button align-flex-row text-dark background-light" href="#">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.425" height="20.425"
+                        viewBox="0 0 20.425 20.425">
+                        <path data-name="Path 101"
+                            d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                            transform="translate(-92.553 0)" />
+                        <path data-name="Path 102"
+                            d="M2.479,145.2a.6.6,0,0,0-.6-.6H.6a.6.6,0,1,0,0,1.2H1.88A.6.6,0,0,0,2.479,145.2Zm0,0"
+                            transform="translate(0 -138.833)" />
+                        <path data-name="Path 103"
+                            d="M451.747,144.6h-1.282a.6.6,0,1,0,0,1.2h1.282a.6.6,0,1,0,0-1.2Zm0,0"
+                            transform="translate(-431.921 -138.833)" />
+                        <path data-name="Path 104"
+                            d="M33.695,249.112l-1.11.641a.6.6,0,1,0,.6,1.036l1.11-.641a.6.6,0,1,0-.6-1.037Zm0,0"
+                            transform="translate(-30.997 -239.097)" />
+                        <path data-name="Path 105"
+                            d="M422.48,25.937a.6.6,0,0,0,.3-.08l1.11-.641a.6.6,0,1,0-.6-1.036l-1.11.641a.6.6,0,0,0,.3,1.117Zm0,0"
+                            transform="translate(-405.051 -23.138)" />
+                        <path data-name="Path 106"
+                            d="M423.888,249.757l-1.11-.641a.6.6,0,1,0-.6,1.036l1.11.641a.6.6,0,1,0,.6-1.036Zm0,0"
+                            transform="translate(-405.05 -239.101)" />
+                        <path data-name="Path 107"
+                            d="M34.3,24.821l-1.11-.641a.6.6,0,0,0-.6,1.036l1.11.641a.6.6,0,0,0,.6-1.037Zm0,0"
+                            transform="translate(-31 -23.139)" />
+                    </svg>
+                    Bed Lights
+                </a>
+            </div>
+            <div id="off-button" class="off-button-container active">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M16.56,5.44L15.11,6.89C16.84,7.94 18,9.83 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12C6,9.83 7.16,7.94 8.88,6.88L7.44,5.44C5.36,6.88 4,9.28 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12C20,9.28 18.64,6.88 16.56,5.44M13,3H11V13H13">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <main>
+            <div id="shutdown-overlay" class="shutdown-overlay">
+                <div id="off-button-overlay" class="off-button-big-container">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M16.56,5.44L15.11,6.89C16.84,7.94 18,9.83 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12C6,9.83 7.16,7.94 8.88,6.88L7.44,5.44C5.36,6.88 4,9.28 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12C20,9.28 18.64,6.88 16.56,5.44M13,3H11V13H13">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <article class="section-wrapper">
+
+                <!-- ********************************************* -->
+                <!-- ********************************************* -->
+                <!-- ************* INTENSITY CONTROLS ************ -->
+                <!-- ********************************************* -->
+                <!-- ********************************************* -->
+
+                <section>
+                    <H2>Intensity</H2>
+                    <div class="slidecontainer">
+                        <!-- Bulb Off (left) -->
+                        <a href="#" id="bulb-intensity-off" class="button align-flex-row text-dark show">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.425" height="20.425"
+                                viewBox="0 0 20.425 20.425">
+
+                                <path data-name="Path 101" class="cls-1"
+                                    d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                                    transform="translate(-92.553 0)" />
+                            </svg>
+                        </a>
+                        <!-- Slider -->
+                        <div id="slider-intensity-adjust" class="slider">
+                            <input type="range" min="20" max="100" value="20">
+                        </div>
+                        <!-- Bulb On (right) -->
+                        <a href="#" id="bulb-intensity-on" class="button align-flex-row text-dark show yellow">
+                            <svg class="icon light-bulb" style="opacity: 0.2;" xmlns="http://www.w3.org/2000/svg"
+                                width="20.425" height="20.425" viewBox="0 0 20.425 20.425">
+
+
+                                <path data-name="Path 101" class="cls-1"
+                                    d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                                    transform="translate(-92.553 0)" />
+                                <path data-name="Path 102" class="cls-1"
+                                    d="M2.479,145.2a.6.6,0,0,0-.6-.6H.6a.6.6,0,1,0,0,1.2H1.88A.6.6,0,0,0,2.479,145.2Zm0,0"
+                                    transform="translate(0 -138.833)" />
+                                <path data-name="Path 103" class="cls-1"
+                                    d="M451.747,144.6h-1.282a.6.6,0,1,0,0,1.2h1.282a.6.6,0,1,0,0-1.2Zm0,0"
+                                    transform="translate(-431.921 -138.833)" />
+                                <path data-name="Path 104" class="cls-1"
+                                    d="M33.695,249.112l-1.11.641a.6.6,0,1,0,.6,1.036l1.11-.641a.6.6,0,1,0-.6-1.037Zm0,0"
+                                    transform="translate(-30.997 -239.097)" />
+                                <path data-name="Path 105" class="cls-1"
+                                    d="M422.48,25.937a.6.6,0,0,0,.3-.08l1.11-.641a.6.6,0,1,0-.6-1.036l-1.11.641a.6.6,0,0,0,.3,1.117Zm0,0"
+                                    transform="translate(-405.051 -23.138)" />
+                                <path data-name="Path 106" class="cls-1"
+                                    d="M423.888,249.757l-1.11-.641a.6.6,0,1,0-.6,1.036l1.11.641a.6.6,0,1,0,.6-1.036Zm0,0"
+                                    transform="translate(-405.05 -239.101)" />
+                                <path data-name="Path 107" class="cls-1"
+                                    d="M34.3,24.821l-1.11-.641a.6.6,0,0,0-.6,1.036l1.11.641a.6.6,0,0,0,.6-1.037Zm0,0"
+                                    transform="translate(-31 -23.139)" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </section>
+
+                <!-- ********************************************* -->
+                <!-- ********************************************* -->
+                <!-- ************** CIRCLE BUTTONS *************** -->
+                <!-- ********************************************* -->
+                <!-- ********************************************* -->
+
+                <section>
+                    <H2>Color</H2>
+                    <div class="light-color-toggle-container">
+                        <a href="#" id="light-change-red" class="light-change" data-color="red">
+                            <svg class="pastel-red light-color-toggle" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="12" />
+                            </svg>
+                        </a>
+                        <a href="#" id="light-change-green" class="light-change margin-animation" data-color="green">
+                            <svg class="pastel-green light-color-toggle" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="12" />
+                            </svg>
+                        </a>
+                        <a href="#" id="light-change-blue" class="light-change margin-animation" data-color="blue">
+                            <svg class="pastel-blue light-color-toggle" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="12" />
+                            </svg>
+                        </a>
+                        <a href="#" id="light-change-blue-purple" class="light-change margin-animation"
+                            data-color="blue-purple">
+                            <svg class="pastel-blue-purple light-color-toggle" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="12" />
+                            </svg>
+                        </a>
+                        <a href="#" id="light-change-purple" class="light-change margin-animation" data-color="purple">
+                            <svg class="pastel-purple light-color-toggle" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="12" />
+                            </svg>
+                        </a>
+                        <a href="#" id="light-change-yellow" class="light-change margin-animation" data-color="yellow">
+                            <svg class="pastel-yellow light-color-toggle" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="12" />
+                            </svg>
+                        </a>
+                        <a href="#" class="margin-animation">
+                            <svg class="pastel-white light-color-toggle" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="12" />
+                                <line stroke="black" x1="8" y1="12" x2="16" y2="12"></line>
+                                <line stroke="black" x1="12" y1="8" x2="12" y2="16"></line>
+                            </svg>
+                        </a>
+
+                    </div>
+                </section>
+
+                <!-- ********************************************* -->
+                <!-- ********************************************* -->
+                <!-- ************** SCENES BUTTONS *************** -->
+                <!-- ********************************************* -->
+                <!-- ********************************************* -->
+
+                <section class="scenes">
+                    <article>
+                        <H2>Scenes</H2>
+                        <div class="grid-col-2">
+                            <div>
+                                <a href="#" class="button align-flex-row text-light gradient-red">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.425" height="20.425"
+                                        viewBox="0 0 20.425 20.425">
+
+                                        <path data-name="Path 101" class="cls-1"
+                                            d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                                            transform="translate(-92.553 0)" />
+                                        <path data-name="Path 102" class="cls-1"
+                                            d="M2.479,145.2a.6.6,0,0,0-.6-.6H.6a.6.6,0,1,0,0,1.2H1.88A.6.6,0,0,0,2.479,145.2Zm0,0"
+                                            transform="translate(0 -138.833)" />
+                                        <path data-name="Path 103" class="cls-1"
+                                            d="M451.747,144.6h-1.282a.6.6,0,1,0,0,1.2h1.282a.6.6,0,1,0,0-1.2Zm0,0"
+                                            transform="translate(-431.921 -138.833)" />
+                                        <path data-name="Path 104" class="cls-1"
+                                            d="M33.695,249.112l-1.11.641a.6.6,0,1,0,.6,1.036l1.11-.641a.6.6,0,1,0-.6-1.037Zm0,0"
+                                            transform="translate(-30.997 -239.097)" />
+                                        <path data-name="Path 105" class="cls-1"
+                                            d="M422.48,25.937a.6.6,0,0,0,.3-.08l1.11-.641a.6.6,0,1,0-.6-1.036l-1.11.641a.6.6,0,0,0,.3,1.117Zm0,0"
+                                            transform="translate(-405.051 -23.138)" />
+                                        <path data-name="Path 106" class="cls-1"
+                                            d="M423.888,249.757l-1.11-.641a.6.6,0,1,0-.6,1.036l1.11.641a.6.6,0,1,0,.6-1.036Zm0,0"
+                                            transform="translate(-405.05 -239.101)" />
+                                        <path data-name="Path 107" class="cls-1"
+                                            d="M34.3,24.821l-1.11-.641a.6.6,0,0,0-.6,1.036l1.11.641a.6.6,0,0,0,.6-1.037Zm0,0"
+                                            transform="translate(-31 -23.139)" />
+                                    </svg>
+
+                                    Birthday
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="button align-flex-row text-light gradient-purple slide-right">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.425" height="20.425"
+                                        viewBox="0 0 20.425 20.425">
+
+                                        <path data-name="Path 101" class="cls-1"
+                                            d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                                            transform="translate(-92.553 0)" />
+                                        <path data-name="Path 102" class="cls-1"
+                                            d="M2.479,145.2a.6.6,0,0,0-.6-.6H.6a.6.6,0,1,0,0,1.2H1.88A.6.6,0,0,0,2.479,145.2Zm0,0"
+                                            transform="translate(0 -138.833)" />
+                                        <path data-name="Path 103" class="cls-1"
+                                            d="M451.747,144.6h-1.282a.6.6,0,1,0,0,1.2h1.282a.6.6,0,1,0,0-1.2Zm0,0"
+                                            transform="translate(-431.921 -138.833)" />
+                                        <path data-name="Path 104" class="cls-1"
+                                            d="M33.695,249.112l-1.11.641a.6.6,0,1,0,.6,1.036l1.11-.641a.6.6,0,1,0-.6-1.037Zm0,0"
+                                            transform="translate(-30.997 -239.097)" />
+                                        <path data-name="Path 105" class="cls-1"
+                                            d="M422.48,25.937a.6.6,0,0,0,.3-.08l1.11-.641a.6.6,0,1,0-.6-1.036l-1.11.641a.6.6,0,0,0,.3,1.117Zm0,0"
+                                            transform="translate(-405.051 -23.138)" />
+                                        <path data-name="Path 106" class="cls-1"
+                                            d="M423.888,249.757l-1.11-.641a.6.6,0,1,0-.6,1.036l1.11.641a.6.6,0,1,0,.6-1.036Zm0,0"
+                                            transform="translate(-405.05 -239.101)" />
+                                        <path data-name="Path 107" class="cls-1"
+                                            d="M34.3,24.821l-1.11-.641a.6.6,0,0,0-.6,1.036l1.11.641a.6.6,0,0,0,.6-1.037Zm0,0"
+                                            transform="translate(-31 -23.139)" />
+                                    </svg>
+                                    Party
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="button align-flex-row text-light gradient-blue">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.425" height="20.425"
+                                        viewBox="0 0 20.425 20.425">
+
+                                        <path data-name="Path 101" class="cls-1"
+                                            d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                                            transform="translate(-92.553 0)" />
+                                        <path data-name="Path 102" class="cls-1"
+                                            d="M2.479,145.2a.6.6,0,0,0-.6-.6H.6a.6.6,0,1,0,0,1.2H1.88A.6.6,0,0,0,2.479,145.2Zm0,0"
+                                            transform="translate(0 -138.833)" />
+                                        <path data-name="Path 103" class="cls-1"
+                                            d="M451.747,144.6h-1.282a.6.6,0,1,0,0,1.2h1.282a.6.6,0,1,0,0-1.2Zm0,0"
+                                            transform="translate(-431.921 -138.833)" />
+                                        <path data-name="Path 104" class="cls-1"
+                                            d="M33.695,249.112l-1.11.641a.6.6,0,1,0,.6,1.036l1.11-.641a.6.6,0,1,0-.6-1.037Zm0,0"
+                                            transform="translate(-30.997 -239.097)" />
+                                        <path data-name="Path 105" class="cls-1"
+                                            d="M422.48,25.937a.6.6,0,0,0,.3-.08l1.11-.641a.6.6,0,1,0-.6-1.036l-1.11.641a.6.6,0,0,0,.3,1.117Zm0,0"
+                                            transform="translate(-405.051 -23.138)" />
+                                        <path data-name="Path 106" class="cls-1"
+                                            d="M423.888,249.757l-1.11-.641a.6.6,0,1,0-.6,1.036l1.11.641a.6.6,0,1,0,.6-1.036Zm0,0"
+                                            transform="translate(-405.05 -239.101)" />
+                                        <path data-name="Path 107" class="cls-1"
+                                            d="M34.3,24.821l-1.11-.641a.6.6,0,0,0-.6,1.036l1.11.641a.6.6,0,0,0,.6-1.037Zm0,0"
+                                            transform="translate(-31 -23.139)" />
+                                    </svg>
+                                    Relax
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="button align-flex-row text-dark gradient-green slide-right">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20.425" height="20.425"
+                                        viewBox="0 0 20.425 20.425">
+
+                                        <path data-name="Path 101" class="cls-1"
+                                            d="M102.765,0a6.367,6.367,0,0,0-3.8,11.474v.532a1.876,1.876,0,0,0-.134,2.694,1.879,1.879,0,0,0,.818,3.078,3.162,3.162,0,0,0,6.239,0A1.879,1.879,0,0,0,106.7,14.7a1.876,1.876,0,0,0-.134-2.694v-.532A6.367,6.367,0,0,0,102.765,0Zm2.564,12.734a.684.684,0,0,1,0,1.367H100.2a.684.684,0,1,1,0-1.367Zm-2.564,6.495a1.969,1.969,0,0,1-1.872-1.367h3.745A1.969,1.969,0,0,1,102.765,19.229Zm2.564-2.564H100.2a.683.683,0,1,1,0-1.367h5.128a.683.683,0,0,1,0,1.367Zm.308-6a.6.6,0,0,0-.266.5v.374h-.726V9.179l.859-.859a.6.6,0,1,0-.846-.846l-1.035,1.035a.6.6,0,0,0-.175.423v2.606h-1.367V8.931a.6.6,0,0,0-.175-.423l-1.035-1.035a.6.6,0,1,0-.846.846l.859.859v2.359h-.726v-.374a.6.6,0,0,0-.266-.5,5.17,5.17,0,1,1,5.744,0Zm0,0"
+                                            transform="translate(-92.553 0)" />
+                                        <path data-name="Path 102" class="cls-1"
+                                            d="M2.479,145.2a.6.6,0,0,0-.6-.6H.6a.6.6,0,1,0,0,1.2H1.88A.6.6,0,0,0,2.479,145.2Zm0,0"
+                                            transform="translate(0 -138.833)" />
+                                        <path data-name="Path 103" class="cls-1"
+                                            d="M451.747,144.6h-1.282a.6.6,0,1,0,0,1.2h1.282a.6.6,0,1,0,0-1.2Zm0,0"
+                                            transform="translate(-431.921 -138.833)" />
+                                        <path data-name="Path 104" class="cls-1"
+                                            d="M33.695,249.112l-1.11.641a.6.6,0,1,0,.6,1.036l1.11-.641a.6.6,0,1,0-.6-1.037Zm0,0"
+                                            transform="translate(-30.997 -239.097)" />
+                                        <path data-name="Path 105" class="cls-1"
+                                            d="M422.48,25.937a.6.6,0,0,0,.3-.08l1.11-.641a.6.6,0,1,0-.6-1.036l-1.11.641a.6.6,0,0,0,.3,1.117Zm0,0"
+                                            transform="translate(-405.051 -23.138)" />
+                                        <path data-name="Path 106" class="cls-1"
+                                            d="M423.888,249.757l-1.11-.641a.6.6,0,1,0-.6,1.036l1.11.641a.6.6,0,1,0,.6-1.036Zm0,0"
+                                            transform="translate(-405.05 -239.101)" />
+                                        <path data-name="Path 107" class="cls-1"
+                                            d="M34.3,24.821l-1.11-.641a.6.6,0,0,0-.6,1.036l1.11.641a.6.6,0,0,0,.6-1.037Zm0,0"
+                                            transform="translate(-31 -23.139)" />
+                                    </svg>
+                                    Fun
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </article>
+        </main>
+
+
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- ************** FOOTER *********************** -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+
+
+        <footer>
+            <div class="footerIcons ">
+                <a href="#" class="bright"><img src="images/bulb.svg" alt="Footer icon"></a>
+                <a href="index.html" class="back">
+                    <img class="arrow" src="images/arrow.svg" alt="Footer icon">
+                    <img class="house" src="images/home.svg" alt="Footer icon">
+                </a>
+                <a href="#" class="spin"><img src="images/settings.svg" alt="Footer icon"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
